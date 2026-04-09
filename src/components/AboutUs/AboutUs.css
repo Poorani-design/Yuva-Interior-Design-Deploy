@@ -1,0 +1,42 @@
+/* WhyChooseYuva.css */
+
+/* Define the 'float' keyframes: subtle up/down movement */
+@keyframes yuvaFloat {
+  0% {
+    transform: translateY(0px);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-8px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 0.8;
+  }
+}
+
+/* Define the 'slide-in' keyframes for when the page loads */
+@keyframes yuvaSlideIn {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Apply the slide-in animation (plays once on load) */
+.yuva-float {
+  animation: yuvaSlideIn 0.8s ease-out forwards;
+}
+
+/* Apply the infinite float animation to the middle/accent card for emphasis */
+.yuva-accent-card-special {
+  animation: yuvaSlideIn 0.8s ease-out forwards, yuvaFloat 6s ease-in-out infinite;
+  animation-delay: 0.15s, 0.8s;
+   /* waits for slide-in to finish */:;
+  -webkit-animation: yuvaSlideIn 0.8s ease-out forwards, yuvaFloat 6s ease-in-out infinite;
+}

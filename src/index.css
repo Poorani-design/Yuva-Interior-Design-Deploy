@@ -1,0 +1,282 @@
+@import "tailwindcss";
+:root {
+    /* 🎨 Primary Colors */
+    --color-primary: #8B5E3C;
+    /* Wood Brown */
+    --color-primary-dark: #6E472C;
+    --color-primary-light: #B88A5A;
+
+    --color-accent: #D4A373;
+    /* Gold Accent */
+    --color-accent-soft: #FAEDCD;
+
+    /* 🏠 Backgrounds */
+    --color-bg: #FAF7F2;
+    --color-bg-card: #FFFFFF;
+    --color-bg-soft: #F3ECE4;
+
+    /* 📝 Text Colors */
+    --color-text: #2C2C2C;
+    --color-text-light: #6B6B6B;
+    --color-text-white: #FFFFFF;
+
+    /* 🚦 Status Colors */
+    --color-success: #4CAF50;
+    --color-warning: #FF9800;
+    --color-danger: #F44336;
+
+    /* 🔲 Borders */
+    --border-color: #E5DED6;
+    --border-light: #F1EBE4;
+
+    /* 🧱 Radius */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-xl: 30px;
+
+    /* 🌫️ Shadows */
+    --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+    /* 📏 Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 40px;
+
+    /* 🔤 Typography */
+    --font-primary: 'Poppins', sans-serif;
+    --font-heading: 'Playfair Display', serif;
+
+    /* ⚡ Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+}
+
+[data-theme="dark"] {
+    --color-primary: #D4A373;
+    --color-primary-dark: #B88A5A;
+    --color-primary-light: #FAEDCD;
+
+    --color-accent: #8B5E3C;
+    --color-accent-soft: #3A2A1F;
+
+    --color-bg: #1E1E1E;
+    --color-bg-card: #2A2A2A;
+    --color-bg-soft: #252525;
+
+    --color-text: #F5F5F5;
+    --color-text-light: #B0B0B0;
+    --color-text-white: #FFFFFF;
+
+    --border-color: #3A3A3A;
+    --border-light: #444;
+
+    --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+:root {
+  /* 🔤 Font Families */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Poppins', sans-serif;
+
+  /* 🧱 Font Sizes */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 18px;
+  --text-xl: 22px;
+  --text-2xl: 28px;
+  --text-3xl: 36px;
+  --text-4xl: 48px;
+  --text-5xl: 64px;
+
+  /* 🔠 Font Weights */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* 📏 Line Heights */
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.7;
+
+  /* 🔡 Letter Spacing */
+  --ls-tight: -0.5px;
+  --ls-normal: 0px;
+  --ls-wide: 1px;
+  --ls-extra: 2px;
+
+  /* 🎯 Heading Sizes (Ready to Use) */
+  --h1-size: var(--text-5xl);
+  --h2-size: var(--text-4xl);
+  --h3-size: var(--text-3xl);
+  --h4-size: var(--text-2xl);
+  --h5-size: var(--text-xl);
+
+  /* 📝 Paragraph */
+  --p-size: var(--text-md);
+}
+:root {
+  /* 🔤 Font Families */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Poppins', sans-serif;
+
+  /* 🧱 Font Sizes */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 18px;
+  --text-xl: 22px;
+  --text-2xl: 28px;
+  --text-3xl: 36px;
+  --text-4xl: 48px;
+  --text-5xl: 64px;
+
+  /* 🔠 Font Weights */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* 📏 Line Heights */
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.7;
+
+  /* 🔡 Letter Spacing */
+  --ls-tight: -0.5px;
+  --ls-normal: 0px;
+  --ls-wide: 1px;
+  --ls-extra: 2px;
+
+  /* 🎯 Heading Sizes (Ready to Use) */
+  --h1-size: var(--text-5xl);
+  --h2-size: var(--text-4xl);
+  --h3-size: var(--text-3xl);
+  --h4-size: var(--text-2xl);
+  --h5-size: var(--text-xl);
+
+  /* 📝 Paragraph */
+  --p-size: var(--text-md);
+}
+.btn-primary {
+    background: var(--color-primary);
+    color: var(--color-text-white);
+    padding: 9px 19px;
+    border-radius: var(--radius-md);
+    border: none;
+    font-size: 13px;
+    transition: var(--transition-normal);
+    -webkit-transition: var(--transition-normal);
+    -moz-transition: var(--transition-normal);
+    -ms-transition: var(--transition-normal);
+    -o-transition: var(--transition-normal);
+    -webkit-border-radius: var(--radius-md);
+    -moz-border-radius: var(--radius-md);
+    -ms-border-radius: var(--radius-md);
+    -o-border-radius: var(--radius-md);
+}
+
+.btn-primary:hover {
+    background: var(--color-primary-dark);
+    transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+}
+
+.btn-accent {
+    background: var(--color-accent);
+    color: #fff;
+}
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 14px 18px;
+    border-radius: 50px;
+    font-weight: 600;
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+    z-index: 1000;
+    transition: var(--transition-normal);
+    -webkit-transition: var(--transition-normal);
+    -moz-transition: var(--transition-normal);
+    -ms-transition: var(--transition-normal);
+    -o-transition: var(--transition-normal);
+
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.card {
+    background: var(--color-bg-card);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: var(--space-lg);
+    border: 1px solid var(--border-light);
+}
+
+/* 🔥 SCROLLBAR - YUVA INTERIOR THEME */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #f59e0b #0a0a0a;
+}
+/* Width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+  background: #0a0a0a; /* deep black */
+}
+
+/* Thumb (scroll handle) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    #f59e0b,
+    #d97706
+  ); /* amber gradient */
+  border-radius: 20px;
+  border: 2px solid #0a0a0a; /* space effect */
+}
+
+/* Hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    #fbbf24,
+    #f59e0b
+  );
+}
+::-webkit-scrollbar-thumb {
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+}
+
+/* 🔥 SECTION REVEAL ANIMATION */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}

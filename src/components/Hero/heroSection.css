@@ -1,0 +1,11 @@
+.hero-wrapper{
+    /* background:url('../../assets/Images/HeroSection/yuvaInteriorDesigner_hero.png'); */
+    width:100vw;
+    overflow:hidden;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction:column;
+}

@@ -1,0 +1,10 @@
+
+
+html{
+    scroll-behavior: smooth;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
