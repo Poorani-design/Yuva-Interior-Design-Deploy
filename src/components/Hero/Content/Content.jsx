@@ -1,13 +1,14 @@
 import React from "react";
 import LeadForm from "../../Modal/Modal";
-import Yuva_Interior_Designer from '../../../assets/Images/HeroSection/Yuva_Interior_Designer_1.PNG'
+import Yuva_Interior_Designer from "../../../assets/Images/HeroSection/Yuva_Interior_Designer_1.PNG";
+
 
 const Content = () => {
   const [showForm, setShowForm] = React.useState(false);
   return (
-    <section className="w-full flex flex-col sm:flex-row  bg-black mt-10 md:mt-15">
+    <section className="w-full flex flex-col  justify-center items-center sm:flex-row bg-black mt-10 md:mt-15">
       {/* 🔹 LEFT (BLACK THEME) */}
-      <div className="flex items-center px-6 sm:px-10 lg:px-16">
+      <div className="flex items-center px-5 py-2 sm:px-10 lg:px-16">
         <div className="max-w-xl flex flex-col gap-6">
           {/* Tag */}
           {/* <span className="text-amber-500 text-sm tracking-[3px]  uppercase">
@@ -33,7 +34,7 @@ const Content = () => {
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 mb-10">
             <button
               onClick={() => setShowForm(true)}
               className="px-6 py-3 bg-amber-500 text-black font-medium rounded-md
@@ -42,26 +43,28 @@ const Content = () => {
               Get Free Quote
             </button>
 
-            <a href="/portfolio"><button
-              className="px-6 py-3 border border-amber-500 text-amber-500 rounded-md
+            <a href="/portfolio">
+              <button
+                className="px-6 py-3 border border-amber-500 text-amber-500 rounded-md
               hover:bg-amber-500 hover:text-black transition duration-300"
-            >
-              View Projects
-            </button></a>
+              >
+                View Projects
+              </button>
+            </a>
           </div>
         </div>
       </div>
 
       {/* 🔹 RIGHT (IMAGE WITH SOFT OVERLAY) */}
-      <div className="relative ">
+      <div className=" ">
         <img
           src={Yuva_Interior_Designer}
-          alt="Yuva Interior Designer"
-          className="w-full h-full object-contain p-2 sm:p-4 rounded-lg shadow-lg shadow-black/30"
+          alt="Interior Design"
+          className="w-full h-full object-fit p-1 sm:p-3 rounded-lg shadow-lg shadow-black/30"
         />
 
         {/* Soft overlay for premium look */}
-        <div className="absolute inset-0 bg-black/30"></div>
+        {/* <div className="absolute inset-0 bg-black/30"></div> */}
       </div>
       {/* LEAD FORM */}
       {showForm && <LeadForm setShowForm={setShowForm} />}
