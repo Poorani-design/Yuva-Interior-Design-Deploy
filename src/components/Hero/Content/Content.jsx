@@ -1,10 +1,11 @@
 import React from "react";
 import LeadForm from "../../Modal/Modal";
+import Yuva_Interior_Designer from '../../../assets/Images/HeroSection/Yuva_Interior_Designer_1.PNG'
 
 const Content = () => {
   const [showForm, setShowForm] = React.useState(false);
   return (
-    <section className="w-full min-h-screen grid md:grid-cols-2  bg-black mt-10 md:mt-15 rounded-lg overflow-hidden">
+    <section className="w-full flex flex-col sm:flex-row  bg-black mt-10 md:mt-15">
       {/* 🔹 LEFT (BLACK THEME) */}
       <div className="flex items-center px-6 sm:px-10 lg:px-16">
         <div className="max-w-xl flex flex-col gap-6">
@@ -54,9 +55,9 @@ const Content = () => {
       {/* 🔹 RIGHT (IMAGE WITH SOFT OVERLAY) */}
       <div className="relative ">
         <img
-          src="/src/assets/Images/HeroSection/Yuva_Interior_Designer_1.PNG"
-          alt="Interior Design"
-          className="w-full h-full object-contain p-4 rounded-lg shadow-lg shadow-black/30"
+          src={Yuva_Interior_Designer}
+          alt="Yuva Interior Designer"
+          className="w-full h-full object-contain p-2 sm:p-4 rounded-lg shadow-lg shadow-black/30"
         />
 
         {/* Soft overlay for premium look */}

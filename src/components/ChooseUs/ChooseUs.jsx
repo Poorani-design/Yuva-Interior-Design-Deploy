@@ -27,7 +27,7 @@ const reasonData = [
   {
     id: 4,
     icon: <MdVerified />,
-    title: "15 Years Warranty",
+    title: "10 Years Warranty",
     description: "Long-lasting quality assurance.",
   },
   {
