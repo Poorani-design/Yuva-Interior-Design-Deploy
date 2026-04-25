@@ -1,6 +1,6 @@
 import React from "react";
 import LeadForm from "../../Modal/Modal";
-import Yuva_Interior_Designer from "../../../assets/Images/HeroSection/Yuva_Interior_Designer_1.png";
+import Yuva_Interior_Designer from "../../../assets/Images/HeroSection/yuvaInteriorDesigner_hero.png";
 import { Link } from "react-router-dom";
 
 const Content = () => {
