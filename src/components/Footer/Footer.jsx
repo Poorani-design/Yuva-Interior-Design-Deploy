@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaInstagram, FaFacebookF, FaWhatsapp, FaPhone, FaYoutube, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import LegalModal from "../Legal/LegalModal";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [open, setOpen] = useState(null);
@@ -41,9 +42,9 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="/portfolio" className="hover:text-amber-500">
+             <Link to="/portfolio"> <span className="hover:text-amber-500">
                 Portfolio
-              </a>
+              </span></Link>
             </li>
             <li>
               <a href="tel:+91 9087643369" className="hover:text-amber-500">

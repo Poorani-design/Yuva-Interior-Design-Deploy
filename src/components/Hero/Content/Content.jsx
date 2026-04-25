@@ -1,7 +1,7 @@
 import React from "react";
 import LeadForm from "../../Modal/Modal";
-import Yuva_Interior_Designer from "../../../assets/Images/HeroSection/yuva-interior-design.png";
-
+import Yuva_Interior_Designer from "../../../assets/Images/HeroSection/Yuva_Interior_Designer_1.PNG";
+import { Link } from "react-router-dom";
 
 const Content = () => {
   const [showForm, setShowForm] = React.useState(false);
@@ -43,14 +43,14 @@ const Content = () => {
               Get Free Quote
             </button>
 
-            <a href="/portfolio">
+          <Link to="/portfolio">
               <button
                 className="px-6 py-3 border border-amber-500 text-amber-500 rounded-md
               hover:bg-amber-500 hover:text-black transition duration-300"
               >
                 View Projects
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -60,7 +60,7 @@ const Content = () => {
         <img
           src={Yuva_Interior_Designer}
           alt="Interior Design"
-          className="w-full h-full object-fit p-1 sm:p-3 rounded-lg shadow-lg shadow-black/30"
+          className="w-full h-full object-cover p-1 sm:p-2 rounded-lg shadow-lg shadow-black/30"
         />
 
         {/* Soft overlay for premium look */}
