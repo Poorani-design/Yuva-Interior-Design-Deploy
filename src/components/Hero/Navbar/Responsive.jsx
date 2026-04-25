@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useEffect } from "react";
 import { NavbarMenu } from "../../../mockData/navbarData";
+import { Link } from "react-router-dom";
 
 const Responsive = ({ open, setOpen }) => {
   // 🔒 Disable background scroll
@@ -38,14 +39,14 @@ const Responsive = ({ open, setOpen }) => {
             <ul className="flex flex-col items-center gap-8 py-10">
               {NavbarMenu.map((item) => (
                 <li key={item.id}>
-                  <a
-                    href={item.link}
+                  <Link
+                    to={item.link}
                     onClick={() => setOpen(false)}
                     className="text-white text-lg tracking-wide
                     hover:text-amber-500 transition duration-300"
                   >
                     {item.title}
-                  </a>
+                  </Link>
                 </li>
              
                   
